@@ -39,12 +39,12 @@ if( promedio>= 7){
  * Desarrolla un programa que evalue si un numero es divisible
  * entre 7 y 8 */
 
-let num = 336;
+let numb = 336;
 
-console.log("El número", num, "es divisible entre 7 y 8: ");
+console.log("El número", numb, "es divisible entre 7 y 8: ");
 
 
-if( (num / 7) == 0 && (num / 8) == 0){
+if( (numb / 7) == 0 && (numb / 8) == 0){
     console.log("Verdadero");
 } else {
     console.log("Falso");
@@ -56,7 +56,16 @@ if( (num / 7) == 0 && (num / 8) == 0){
  * entre 4 o 9
  * */
 
+let num = 336;
 
+console.log("El número", num, "es divisible entre 7 y 8: ");
+
+
+if( (num / 4) == 0 && (num / 9) == 0){
+    console.log("Verdadero");
+} else {
+    console.log("Falso");
+} 
 
 
 /** Ejercicio 6
@@ -65,7 +74,31 @@ if( (num / 7) == 0 && (num / 8) == 0){
  * que realice las operaciones aritmeticas basicas
  */
 
+let operMate = "division";
+let num1 = 6;
+let num2 = 3;
 
+switch (operMate){
+    case "suma" : 
+    let resul = num1 + num2;
+        console.log("La Suma de los numero: ", num1, "y", num2, "es: ", resul);
+        break;
+    case "resta" :
+        let resul1 = num1 - num2;
+        console.log("La Resta de los numero: ", num1, "y", num2, "es: ", resul1);
+        break;
+    case "multiplicacion" : 
+        let resul2 = num1 * num2;
+        console.log("La Multiplicación de los numero: ", num1, "y", num2, "es: ", resul2);
+        break;
+    case "division" :
+        let resul3 = num1 / num2;
+        console.log("La División de los numero: ", num1, "y", num2, "es: ", resul3);
+        break;
+    default :
+        console.log("No existe ese dia");
+        break;
+}
 
 /** Ejercicio 7
  * 
@@ -96,3 +129,52 @@ switch (typeFilm){
         console.log("No existe esa categoria de pelicula");
         break;
 }
+
+/** Ejercicio 8
+ * 
+ * Crear una interfaz de un cajero ATM */
+
+/** Ejercicio 9
+ * 
+ * Escribir en codigo un programa conversor de divisas
+ */
+
+let opcion = "dolares";
+switch (opcion){
+    case "dolares" : 
+        console.log("Dia 1");
+        break;
+    case "euros" :
+        console.log("Dia 2");
+        break;
+    case "yenes" : 
+        console.log("Dia 3");
+        break;
+    case "libra" :
+        console.log("Dia 4");
+        break;
+    case "franco" : 
+        console.log("Dia 5");
+        break;
+    default :
+        console.log("No existe ese dia");
+        break;
+}
+
+/** Ejercicio 10
+ * 
+ * Realizar un programa que calcule un descuento del 10% a un producto si se ingresa el codigo
+ * de descuento correcto
+ */
+
+let precio = 30;
+let descuento = "DESCUENTO10";
+
+if(descuento === "DESCUENTO10"){
+
+    let des = precio * .10;
+    let desfinal = precio - des;
+    console.log("El precio del producto con el desde es: ", desfinal);
+} else {
+    console.log("Aun eres un bebe");
+} 
